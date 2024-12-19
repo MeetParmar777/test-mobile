@@ -31,3 +31,64 @@
         document.onmousedown=killCopy
         document.onclick=reEnable
     }
+
+    document.addEventListener("copy", disable);
+    document.addEventListener("cut", disable);
+    document.addEventListener("drag", disable);
+    document.addEventListener("dragstart", disable);
+    document.addEventListener("dragover", disable);
+    document.addEventListener("dragend", disable);
+    document.addEventListener("drop", disable);
+  
+  function disable(e) {
+    if (e) e.preventDefault();
+    return false;
+  }
+
+  document.onkeydown = (e) => {
+    if (e.key == 123) {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'I') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'C') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'J') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.key == 'U') {
+        e.preventDefault();
+    }
+
+};
+
+$(document).bind("contextmenu",function(e) {
+    e.preventDefault();
+  });
+  $(document).keydown(function(e){
+    if(e.which === 123){
+      return false;
+  }
+});
+
+
+document.addEventListener('keydown', function(event) {
+    // Disable F12 key (DevTools)
+    if (event.keyCode == 123) {
+        event.preventDefault();
+    }
+    // Disable Ctrl + Shift + I (DevTools)
+    else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+        event.preventDefault();
+    }
+    // Disable Ctrl + U (View Source)
+    else if (event.ctrlKey && event.keyCode == 85) {
+        event.preventDefault();
+    }
+    // Disable Ctrl + Shift + U (View Source in some browsers)
+    else if (event.ctrlKey && event.shiftKey && event.keyCode == 85) {
+        event.preventDefault();
+    }
+});
