@@ -185,6 +185,7 @@ header.main-header .navmenu .navbar .navbar-contact-cta {
     padding: 17px 30px;
     border-radius: 6px;
     border: 2px solid transparent;
+    text-transform: uppercase;
 }
 
 header.main-header .navmenu .navbar .navbar-contact-cta:hover {
@@ -197,7 +198,7 @@ section.hero-banner {
     width: 100%;
     padding: 320px 0 185px;
     display: inline-block;
-    background-image: url(../images/home-banner-bg.png);
+    background-image: url(/images/home-banner-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 100%;
@@ -234,6 +235,7 @@ section.hero-banner .main-content p {
     font-size: 20px;
     line-height: 30px;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 section.hero-banner .main-content .cta {
@@ -272,6 +274,7 @@ section.mission-vission-section .wrapper .mission {
     padding: 40px;
     border-radius: 6px;
     overflow: hidden;
+    z-index: 1;
 }
 
 section.mission-vission-section .wrapper .mission::before {
@@ -283,6 +286,7 @@ section.mission-vission-section .wrapper .mission::before {
     top: -30%;
     border-radius: 50%;
     background: linear-gradient(135.24deg, rgba(3, 73, 117, 0.3) 17.18%, rgba(5, 78, 124, 0.3) 36.84%, rgba(251, 191, 48, 0.3) 69.26%);
+    z-index: -1;
 }
 
 section.mission-vission-section .wrapper .vision {
@@ -307,9 +311,8 @@ section.mission-vission-section .wrapper .vision::before {
 }
 
 section.mission-vission-section .wrapper .mission .title, section.mission-vission-section .wrapper .vision .title {
-    font-size: 40px;
+
     font-weight: 700;
-    line-height: 60px;
     color: #fff;
     margin: 20px 0;
     position: relative;
@@ -378,9 +381,7 @@ section.our-value-section .inner-content .section-heading .heading span {
 }
 
 section.our-value-section .inner-content .section-heading .heading {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 60px;
+
     color: #fff;
 }
 
@@ -796,7 +797,6 @@ section.Specialization-section .blogs .blog .blog-cta {
 .why-choose-us.services .main-content .right-content .round-img {
     border: none;
 }
-.why-choose-us.services .main-content .right-content .round-img img {
-    height: 510px;
-    width: 510px;
+.why-choose-us.services .main-content .left-content {
+    width: 58%;
 }
