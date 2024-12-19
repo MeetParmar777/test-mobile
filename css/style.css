@@ -197,7 +197,7 @@ section.hero-banner {
     width: 100%;
     padding: 320px 0 185px;
     display: inline-block;
-    background-image: url(/images/home-banner-bg.png);
+    background-image: url(../images/home-banner-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 100%;
