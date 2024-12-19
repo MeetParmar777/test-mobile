@@ -75,19 +75,19 @@ $(document).bind("contextmenu",function(e) {
 
 
 document.addEventListener('keydown', function(event) {
-    // Disable F12 key (DevTools)
+    
     if (event.keyCode == 123) {
         event.preventDefault();
     }
-    // Disable Ctrl + Shift + I (DevTools)
+    
     else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
         event.preventDefault();
     }
-    // Disable Ctrl + U (View Source)
+    
     else if (event.ctrlKey && event.keyCode == 85) {
         event.preventDefault();
     }
-    // Disable Ctrl + Shift + U (View Source in some browsers)
+    
     else if (event.ctrlKey && event.shiftKey && event.keyCode == 85) {
         event.preventDefault();
     }
